@@ -13,7 +13,6 @@ namespace Avaliação.DAO
     {
         public static void Insert(CaminhoneteDTO cd)
         {
-            Console.WriteLine("AQQQQUUIII");
             int id = 1;
             try
             {
@@ -48,6 +47,7 @@ namespace Avaliação.DAO
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Deu certo");
                 Conexao.dbCon().Close();
+                MessageBox.Show("Caminhonete salva com sucesso");
             }
             catch (Exception E)
             {

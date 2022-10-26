@@ -45,6 +45,7 @@ namespace Avaliação.DAO
                 cmd.Parameters.AddWithValue("@ano", cd.Ano);
                 cmd.ExecuteNonQuery();
                 Conexao.dbCon().Close();
+                MessageBox.Show("Moto adicionada com sucesso");
             }
             catch (Exception E)
             {
