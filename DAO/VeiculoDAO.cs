@@ -44,11 +44,12 @@ namespace Avaliação.DAO
             try
             {
                 var cmd = Conexao.dbCon().CreateCommand();
-                cmd.CommandText = "UPDATE "+tabela+" SET nome = '"+veiculo.Nome.ToString()+"', modelo = '"+veiculo.Modelo.ToString()+"', ano = '"+veiculo.Ano.ToString()+"' WHERE "+tipo_id+" = "+veiculo.Id_veiculo+" ";
-                MessageBox.Show(cmd.CommandText);
+                cmd.CommandText = "UPDATE "+tabela+" SET nome = '"+veiculo.Nome.ToString()+"', modelo = '"+veiculo.Modelo.ToString()+"'" +
+                    ", ano = '"+veiculo.Ano.ToString()+"' WHERE "+tipo_id+" = "+veiculo.Id_veiculo+" ";
                 da = new SQLiteDataAdapter(cmd);
                 cmd.ExecuteNonQuery();
                 Conexao.dbCon().Close();
+                MessageBox.Show("Veículo alterado com sucesso");
             }
             catch (Exception E)
             {
@@ -86,10 +87,10 @@ namespace Avaliação.DAO
             {
                 var cmd = Conexao.dbCon().CreateCommand();
                 cmd.CommandText = "DELETE FROM " + tabela + " WHERE " + tipo_id + " = " + id + " ";
-                MessageBox.Show(cmd.CommandText);
                 da = new SQLiteDataAdapter(cmd);
                 cmd.ExecuteNonQuery();
                 Conexao.dbCon().Close();
+                MessageBox.Show("Veículo excluído com sucesso");
             }
             catch (Exception E)
             {

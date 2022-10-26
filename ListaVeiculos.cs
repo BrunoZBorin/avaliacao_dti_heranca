@@ -45,6 +45,7 @@ namespace Avaliação
             DataGridViewRow row = dataGridView1.Rows[rowIndex];
             CadastroVeiculos cv = new CadastroVeiculos();
             cv.GetValuesFromListaVeiculos(row);
+            this.Hide();
             cv.Show();
 
         }
