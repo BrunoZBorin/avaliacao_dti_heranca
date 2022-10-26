@@ -23,7 +23,6 @@ namespace Avaliação.DAO
             string tabela = "";
             string tipo_id = "";
             SQLiteDataAdapter da = null;
-            MessageBox.Show(veiculo.Id_veiculo.ToString());
             switch (tipo)
             {
                 case "Caminhonete":
