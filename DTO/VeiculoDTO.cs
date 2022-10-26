@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Avaliação.DTO
+namespace Avaliacao.DTO
 {
     internal class VeiculoDTO
     {

@@ -7,7 +7,7 @@ using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
 
-namespace Avaliação
+namespace Avaliacao
 {
     internal class Conexao
     {
@@ -15,7 +15,7 @@ namespace Avaliação
 
         public static SQLiteConnection dbCon()
         {
-            conn = new SQLiteConnection("Data Source=C:\\Users\\Altbit\\Avaliação\\bin\\Debug\\db_teste.sdb");
+            conn = new SQLiteConnection("Data Source=C:\\Users\\Altbit\\Avaliacao\\bin\\Debug\\db_teste.sdb");
             conn.Open();
             return conn;
         }

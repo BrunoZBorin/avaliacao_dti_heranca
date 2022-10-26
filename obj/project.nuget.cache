@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n8+3O4Zqiunt7qCxMmoJ+8zsz6ESROxs9U/LmUBC5EG8eGs50y1zr0xd17Zfq0fwYns1EwGeVWh1P+3lTUYi9g==",
+  "dgSpecHash": "0WqSPSSkybk36BHqPRajxBT5NY5XdjuPHiaWWvtk4Pan2qwTnsWqpCJahdE/MlF9tMknsJTKozEP+boBJEZkvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Altbit\\Avaliação\\Avaliação.csproj",
+  "projectFilePath": "C:\\Users\\Altbit\\Avaliacao\\Avaliacao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Altbit\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Altbit\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

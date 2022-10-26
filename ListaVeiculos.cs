@@ -1,5 +1,5 @@
-﻿using Avaliação.DAO;
-using Avaliação.DTO;
+﻿using Avaliacao.DAO;
+using Avaliacao.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,12 +13,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Avaliação
+namespace Avaliacao
 {
     public partial class ListaVeiculos : Form
     {
-        int IdRowSelected = 0;
-        string TipoRowSelected = "";
+        int idRowSelected = 0;
+        string tipoRowSelected = "";
         public ListaVeiculos()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace Avaliação
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = e.RowIndex;
+            var rowIndex = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[rowIndex];
             CadastroVeiculos cv = new CadastroVeiculos();
             cv.GetValuesFromListaVeiculos(row);
@@ -51,7 +51,7 @@ namespace Avaliação
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int rowIndex = e.RowIndex;
+            var rowIndex = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[rowIndex];
             CadastroVeiculos cv = new CadastroVeiculos();
             cv.GetValuesFromListaVeiculos(row);
@@ -87,15 +87,15 @@ namespace Avaliação
 
         private void dataGridView1_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            IdRowSelected = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-            TipoRowSelected = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            idRowSelected = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+            tipoRowSelected = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (IdRowSelected != 0)
+            if (idRowSelected != 0)
             {
-                VeiculoDAO.Delete(IdRowSelected, TipoRowSelected);
+                VeiculoDAO.Delete(idRowSelected, tipoRowSelected);
                 carregaGrid();
             }
             else

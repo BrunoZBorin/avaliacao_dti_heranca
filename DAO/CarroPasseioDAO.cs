@@ -1,4 +1,4 @@
-﻿using Avaliação.DTO;
+﻿using Avaliacao.DTO;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Avaliação.DAO
+namespace Avaliacao.DAO
 {
     internal class CarroPasseioDAO:VeiculoDAO
     {
@@ -15,7 +15,7 @@ namespace Avaliação.DAO
 
         public static void Insert(CarroPasseioDTO cd)
         {
-            int id = 1;
+            var id = 1;
             try
             {
                 var cmd = Conexao.dbCon().CreateCommand();

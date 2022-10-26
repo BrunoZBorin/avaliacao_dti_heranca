@@ -5,15 +5,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Avaliação.DTO;
+using Avaliacao.DTO;
 
-namespace Avaliação.DAO
+namespace Avaliacao.DAO
 {
     internal class CaminhoneteDAO : VeiculoDAO
     {
         public static void Insert(CaminhoneteDTO cd)
         {
-            int id = 1;
+            var id = 1;
             try
             {
                 var cmd = Conexao.dbCon().CreateCommand();

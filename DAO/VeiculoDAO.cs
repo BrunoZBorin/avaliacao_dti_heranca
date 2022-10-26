@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
-using Avaliação.DTO;
+using Avaliacao.DTO;
 
-namespace Avaliação.DAO
+namespace Avaliacao.DAO
 {
     internal class VeiculoDAO
     {
@@ -20,8 +20,8 @@ namespace Avaliação.DAO
 
         public static void Update(VeiculoDTO veiculo, string tipo)
         {
-            string tabela = "";
-            string tipo_id = "";
+            var tabela = "";
+            var tipo_id = "";
             SQLiteDataAdapter da = null;
             switch (tipo)
             {
@@ -63,8 +63,8 @@ namespace Avaliação.DAO
         }
         public static void Delete(Int32 id, string tipo)
         {
-            string tabela = "";
-            string tipo_id = "";
+            var tabela = "";
+            var tipo_id = "";
             SQLiteDataAdapter da = null;
             switch (tipo)
             {

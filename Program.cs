@@ -1,4 +1,4 @@
-namespace Avaliação
+namespace Avaliacao
 {
     internal static class Program
     {

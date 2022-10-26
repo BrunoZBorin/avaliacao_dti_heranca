@@ -8,16 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Avaliação.DAO;
-using Avaliação.DTO;
+using Avaliacao.DAO;
+using Avaliacao.DTO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace Avaliação
+namespace Avaliacao
 {
     public partial class CadastroVeiculos : Form
     {
         public bool update = false;
-        public Int32 id_update;
+
         public CadastroVeiculos()
         {
             InitializeComponent();
@@ -50,7 +50,6 @@ namespace Avaliação
                         cm.Modelo = textBox2.Text;
                         cm.Ano = textBox3.Text;
 
-                        Console.WriteLine(cm.Nome);
                         CaminhoneteDAO.Insert(cm);
                         break;
                     case "Carro Passeio":
@@ -60,7 +59,6 @@ namespace Avaliação
                         cp.Modelo = textBox2.Text;
                         cp.Ano = textBox3.Text;
 
-                        Console.WriteLine(cp.Nome);
                         CarroPasseioDAO.Insert(cp);
                         break;
                     case "Moto":
@@ -70,7 +68,6 @@ namespace Avaliação
                         mt.Modelo = textBox2.Text;
                         mt.Ano = textBox3.Text;
 
-                        Console.WriteLine(mt.Nome);
                         MotoDAO.Insert(mt);
                         break;
                 }

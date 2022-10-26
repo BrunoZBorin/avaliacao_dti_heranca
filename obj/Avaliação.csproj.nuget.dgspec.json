@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Altbit\\Avaliação\\Avaliação.csproj": {}
+    "C:\\Users\\Altbit\\Avaliacao\\Avaliação.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Altbit\\Avaliação\\Avaliação.csproj": {
+    "C:\\Users\\Altbit\\Avaliacao\\Avaliação.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Altbit\\Avaliação\\Avaliação.csproj",
+        "projectUniqueName": "C:\\Users\\Altbit\\Avaliacao\\Avaliação.csproj",
         "projectName": "Avaliação",
-        "projectPath": "C:\\Users\\Altbit\\Avaliação\\Avaliação.csproj",
+        "projectPath": "C:\\Users\\Altbit\\Avaliacao\\Avaliação.csproj",
         "packagesPath": "C:\\Users\\Altbit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Altbit\\Avaliação\\obj\\",
+        "outputPath": "C:\\Users\\Altbit\\Avaliacao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Altbit\\AppData\\Roaming\\NuGet\\NuGet.Config",
